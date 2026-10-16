@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>ご予約前の確認事項・キャンセルポリシー | UB CLINIC SHIBUYA</title>
+<style>
+:root{
+  --pink:#ef8fb2; --pink2:#f7bfd1; --pink3:#fff4f8;
+  --ink:#2d3036; --muted:#73747b; --silver:#d9d9dc; --white:#fff;
+  --shadow:0 8px 28px rgba(45,48,54,.07);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;background:#fafafa;line-height:1.75}
+a{text-decoration:none;color:inherit}.page{max-width:520px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 35px rgba(0,0,0,.04)}
+header{height:68px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.94);position:sticky;top:0;z-index:8;border-bottom:1px solid #eee}
+.brand{display:flex;align-items:center;gap:10px}.mark{font-size:35px;color:var(--pink);font-weight:300}.brandtxt{letter-spacing:.16em;font-family:Georgia,serif;font-size:16px;line-height:1.15}.brandtxt small{display:block;font-family:inherit;font-size:8px;text-align:center;margin-top:3px}
+.menu{font-size:25px;font-weight:200}
+.hero{min-height:660px;padding:90px 28px 70px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;background:
+radial-gradient(circle at 85% 15%,rgba(218,218,222,.55),transparent 26%),
+radial-gradient(circle at 15% 38%,rgba(248,188,211,.38),transparent 25%),
+linear-gradient(145deg,#fff 30%,#fff6f9 62%,#f3f3f4)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(220,220,225,.75);border-radius:50%;width:250px;height:90px;transform:rotate(-25deg)}
+.hero:before{top:70px;right:-90px}.hero:after{bottom:55px;left:-110px;border-color:rgba(239,143,178,.25)}
+.eyebrow{font-size:11px;letter-spacing:.28em;color:#777;margin-bottom:24px}
+h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:34px;line-height:1.55;font-weight:500;margin:0 0 22px}
+.hero p{font-size:14px;margin:0 0 32px}
+.primary{display:block;width:100%;padding:16px 20px;border-radius:28px;color:white;font-weight:700;background:linear-gradient(100deg,var(--pink2),#eb76a2);box-shadow:0 8px 18px rgba(239,143,178,.22)}
+.micro{font-size:9px;letter-spacing:.2em;color:#8b8b90;margin-top:15px}
+section{padding:72px 20px}.section-head{margin-bottom:30px}.num{font-family:Georgia,serif;font-size:54px;color:#f0afc5;line-height:1}.en{font-size:10px;letter-spacing:.22em;color:#a5a5aa}.section-head h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:27px;font-weight:500;line-height:1.55;margin:10px 0 12px}.lead{font-size:13px;color:#666}
+.cards{display:grid;gap:12px}.card{border:1px solid #eee;border-radius:18px;background:#fff;box-shadow:var(--shadow);overflow:hidden}
+.card summary{list-style:none;cursor:pointer;padding:20px 18px;display:grid;grid-template-columns:52px 1fr 20px;align-items:center;gap:13px;font-weight:700}
+.card summary::-webkit-details-marker{display:none}.icon{width:52px;height:52px;border-radius:50%;background:var(--pink3);display:grid;place-items:center;color:#e66e9a;font-size:23px}
+.chev{color:#ea86aa;font-size:22px;transition:.2s}.card[open] .chev{transform:rotate(90deg)}
+.detail{padding:0 20px 20px 83px;font-size:13px;color:#555}.detail strong{color:#d95586}.detail p{margin:0 0 10px}
+.contact{margin-top:28px;padding:26px 20px;border-radius:20px;text-align:center;background:linear-gradient(135deg,#fff8fa,#fbe8ef)}
+.contact h3{color:#df6d97;margin:0 0 10px;font-size:18px}.contact p{font-size:13px;margin:0 0 18px}
+.policy{background:#fbfbfc}.fees{display:grid;gap:12px}.fee{background:white;border:1px solid #eee;border-radius:18px;padding:22px;box-shadow:var(--shadow)}.fee b{display:block;color:#777;font-size:12px}.fee strong{display:block;font-size:30px;color:#e46895;margin:4px 0}.fee ul{font-size:13px;padding-left:18px;margin-bottom:0}
+.late{display:grid;gap:12px}.latebox{border-radius:18px;padding:22px;background:#fff;border:1px solid #eee}.latebox.good{background:#fff7fa}.latebox h3{margin:0 0 8px;font-size:17px}.latebox strong{color:#df648f}.note{font-size:12px;color:#777}
+.medical{padding-top:15px}.medical details{border-top:1px solid #eee}.medical summary{cursor:pointer;padding:17px 2px;font-weight:700}.medical p{font-size:13px;color:#666}
+.ready{text-align:center;padding-bottom:130px}.ready h2{font-family:Georgia,"Yu Mincho",serif;font-weight:400}.ready .primary{margin:24px 0 12px}
+.fixed{position:fixed;z-index:20;bottom:0;left:50%;transform:translateX(-50%);width:min(520px,100%);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:8px;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-top:1px solid #eee}
+.fixed a{padding:13px 8px;border-radius:25px;text-align:center;font-size:13px;font-weight:700}.line{border:1px solid var(--pink);color:#df6b96}.book{background:linear-gradient(100deg,var(--pink2),#ea78a3);color:#fff}
+@media(max-width:370px){h1{font-size:29px}.card summary{grid-template-columns:46px 1fr 18px}.icon{width:46px;height:46px}.detail{padding-left:77px}}
+</style>
+<style>
+.logo{width:46px;height:46px;object-fit:cover;border-radius:8px}.menu{font-size:11px;letter-spacing:.02em;color:#777}
+.card summary{grid-template-columns:26px 1fr 18px;gap:12px}.plus{font-size:23px;font-weight:300;color:#df75a0;line-height:1}.card[open] .plus{font-size:0}.card[open] .plus:after{content:"−";font-size:23px}
+.detail{padding:0 19px 22px 56px}.disclosure{font-weight:700;color:#cc5783!important;background:#fff2f7;padding:10px;border-radius:9px}.risk{border-left:3px solid #e9a3bc;padding-left:10px}.med-table{width:100%;border-collapse:collapse;font-size:11px;line-height:1.5;margin:12px 0}.med-table th,.med-table td{border:1px solid #ddd;padding:7px 5px;vertical-align:top}.med-table th{background:#f8e8ee}.med-table small{color:#c8577e}
+@media(max-width:370px){.detail{padding-left:18px}.card summary{grid-template-columns:22px 1fr 16px}}
+</style><style>
+.logo{width:47px;height:53px;object-fit:contain;border-radius:0;flex-shrink:0}
+.brand{gap:4px}.brandtxt{letter-spacing:.12em}
+.card summary{grid-template-columns:minmax(0,1fr) 24px;gap:10px;padding:19px 18px}
+.card summary>span:first-child{min-width:0}
+.plus-toggle{font-size:23px;color:#e47da4;font-weight:300;line-height:1;text-align:center}
+.card[open] .plus-toggle{font-size:0}
+.card[open] .plus-toggle::after{content:'−';font-size:23px}
+.detail{padding:0 18px 21px;font-size:13px}
+.card{scroll-margin-top:90px}
+.medical details summary{list-style:none;display:flex;justify-content:space-between;gap:10px}
+.medical details summary::-webkit-details-marker{display:none}
+.medical details summary::after{content:'＋';color:#e47da4;font-size:22px}
+.medical details[open] summary::after{content:'−'}
+@media(max-width:370px){.card summary{grid-template-columns:minmax(0,1fr) 22px}.detail{padding:0 17px 20px}}
+</style></head>
+<body><main class="page">
+<header><div class="brand"><img alt="Up Beaut" class="logo" src="upbeaut-logo-transparent.png"/><div class="brandtxt">UB CLINIC<small>SHIBUYA</small></div></div></header>
+<div class="hero">
+<div class="eyebrow">UB CLINIC SHIBUYA</div>
+<h1>ご予約前の<br/>確認事項・<br/>キャンセルポリシー</h1>
+<p>安全に施術をお受けいただくために、<br/>ご予約前に必ずご確認ください。</p>
+<a class="primary" href="#before">ご予約前の確認事項を見る　↓</a>
+<div class="micro">BEFORE YOUR VISIT / RESERVATION POLICY</div>
+</div>
+<section id="before">
+<div class="section-head"><div><span class="num">01</span> <span class="en">BEFORE YOUR VISIT</span></div>
+<h2>事前にお知らせ<br/>いただきたいこと</h2>
+<div class="lead">既往歴や服用中のお薬、他院で受けた施術など、該当する項目がある方はご予約前にお知らせください。項目をタップすると詳細をご確認いただけます。</div></div>
+<div class="cards"><details class="card"><summary><span>他院で施術を受けた方</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>施術を受けた日付・施術名を問診票にご記入ください。施術間隔によっては当日の施術をお受けいただけない場合があります。必要な施術間隔については施術を受けたクリニックにもご確認ください。外科手術後は基本的に3ヶ月の間隔が必要です。ご不明な場合は公式LINEへお問い合わせください。</p></div></details><details class="card"><summary><span>外科手術を受けた方</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>外科手術後は基本的に3ヶ月の施術間隔が必要です。手術名・部位・施術日を問診票にご記入ください。施術部位や経過によっては、さらに期間を空けていただく場合があります。</p></div></details><details class="card"><summary><span>服用中・使用中のお薬がある方</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>お薬の名前・使用状況を問診票にご記入ください。以下は外用薬などの休薬期間の目安です。処方薬の休薬については、処方医にも確認してください。</p><table class="med-table"><thead><tr><th>薬剤・製品</th><th>休薬期間</th></tr></thead><tbody><tr><td>レチノイン酸（トレチノイン）・グリコール酸</td><td>2週間</td></tr><tr><td>ハイドロキノン</td><td>3日間<br/><small>※レーザースポット照射後は10日間</small></td></tr><tr><td>シスペラ</td><td>1週間</td></tr><tr><td>ニキビ薬（抗菌作用）：アクアチム・クリンダマイシン・ダラシン</td><td>当日は使用中止</td></tr><tr><td>ニキビ薬（剥離作用）：デュアック・ディフェリン・エピデュオ・ベピオゲル</td><td>施術前後2週間</td></tr><tr><td>ステロイド外用薬・内服薬</td><td>医師判断</td></tr><tr><td>ゼオスキン・エンビロン・リビジョン・ガウディスキン</td><td>1ヶ月以上使用：A反応がなければ休薬不要<br/>1ヶ月以下使用：1週間休薬</td></tr></tbody></table><p class="note">※上記以外のお薬も、医師の判断により施術できない場合があります。</p></div></details><details class="card"><summary><span>イソトレチノイン（ビタミンA誘導体）内服中の方</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>内服中の施術には、皮膚の過剰反応・色素沈着・ケロイド・過度な乾燥などのリスクがあります。処方元のクリニックに施術についてご確認ください。当日の肌状態によっては施術をお受けいただけない場合があります。</p><p class="risk">施術に伴うリスクをご理解いただき、医師が施術可能と判断した場合は、免責同意書へのご署名が必要です。</p></div></details><details class="card"><summary><span>妊活・妊娠・授乳中の方</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>妊活中・妊娠中・授乳中の方は、当院ではすべての施術をお受けいただけません。該当する場合はご予約前にお知らせください。</p></div></details><details class="card"><summary><span>歯科治療中の方</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>注射治療（ボトックス・ヒアルロン酸など）で唇・口角・人中など口元への施術をご希望の場合は、歯科治療との兼ね合いについて担当の歯科医師にご相談ください。インプラント治療中は、口周りの施術をお控えください。</p></div></details><details class="card"><summary><span>プロテーゼ・金属プレート・ボルトがある方</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>プロテーゼが挿入されている部位は、基本的にすべての施術を避けます。</p><p>金属プレート・ボルトがある場合は、施術内容や部位によりお受けいただけない場合があります。医師が施術可能と判断した場合は、リスクをご理解いただき、免責同意書にご署名のうえ施術を行うことがあります。</p></div></details><details class="card"><summary><span>アレルギー・持病がある方</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>アレルギーの原因・症状、持病、治療状況などを問診票にご記入ください。医師が施術可否を判断いたします。</p></div></details><details class="card"><summary><span>その他、施術に影響する可能性がある事項</span><span aria-hidden="true" class="plus-toggle">＋</span></summary><div class="detail"><p class="disclosure">事前申告が必要です。必ず問診票に詳細をご記入ください。</p><p>上記以外でも気になる症状や治療歴がある場合は、必ず問診票にご記入ください。</p></div></details></div>
+<div class="contact"><h3>該当するか分からない方へ</h3><p>施術を受けられるか分からない場合は、<br/>ご予約前にお気軽にお問い合わせください。</p><a class="primary" href="https://line.me/R/ti/p/@313iltbw?oat_content=url&amp;ts=07271506#~">LINEで確認する　›</a></div>
+</section>
+<section class="policy" id="policy">
+<div class="section-head"><div><span class="num">02</span> <span class="en">RESERVATION POLICY</span></div><h2>予約変更・<br/>キャンセルポリシー</h2><div class="lead">当院は完全予約制です。ご予約の変更・キャンセル、遅刻時の取り扱いを予約前にご確認ください。</div></div>
+<div class="fees">
+<div class="fee"><b>ご予約時間の24時間前まで</b><strong>無料</strong><div class="note">WEBから変更・キャンセルできます。</div></div>
+<div class="fee"><b>施術代金の</b><strong>50%</strong><ul><li>24時間前を過ぎてからのキャンセル</li><li>患者様都合による当日の予約変更・施術中止</li><li>確認事項の申告漏れにより当日施術を中止する場合</li><li>※遅刻については下記の特別ルールをご確認ください。</li></ul></div>
+<div class="fee"><b>施術代金の</b><strong>100%</strong><ul><li>無断キャンセル</li><li>ご予約時間を過ぎてからのキャンセル</li><li>ご連絡のない10分以上の遅刻</li></ul></div>
+</div>
+</section>
+<section id="late">
+<div class="section-head"><div><span class="num">03</span> <span class="en">LATE ARRIVAL</span></div><h2>遅刻について</h2><div class="lead">遅れることが分かった時点で、公式LINEへご連絡ください。</div></div>
+<div class="late">
+<div class="latebox good"><h3>10分以上の遅刻 ＋ <strong>ご連絡あり</strong></h3><p>時間内で可能な範囲の施術、または<strong>当日の時間変更</strong>で対応いたします。</p><div class="note">※予約状況により、ご希望に添えない場合がございます。</div></div>
+<div class="latebox"><h3>10分以上の遅刻 ＋ <strong>ご連絡なし</strong></h3><p><strong>当日無断キャンセル扱い（施術代金100%）</strong>となります。</p></div>
+</div>
+</section>
+<section class="medical">
+<details><summary>医師の判断で施術を変更・中止する場合</summary><p>当日の肌状態・体調・治療歴などにより、医師の判断で施術内容を変更・中止する場合があります。キャンセル料の取り扱いは院内規定に従います。</p></details>
+<details><summary>キャンセルポリシーの詳細</summary><p>交通機関の乱れの際は、キャンセル規定の対象外となります（当院でも運行状況を確認いたします）。遅延が分かった時点で、お早めに公式LINEへご連絡ください。</p></details>
+</section>
+<section class="ready"><div class="en">READY TO BOOK?</div><h2>ご確認ありがとうございます。</h2><p class="lead">上記の確認事項・キャンセルポリシーにご了承のうえ、ご予約へお進みください。</p>
+<a class="primary" href="https://ubshinjuku.b4a.clinic/clinics/301/bookings/new/select/menu/">Web予約・空き状況を確認する　›</a>
+<a class="line" href="https://line.me/R/ti/p/@313iltbw?oat_content=url&amp;ts=07271506#~" style="display:block;padding:13px;border-radius:25px;margin-top:10px">LINEでお問い合わせ</a></section>
+</main>
+<div class="fixed">
+<a class="line" href="https://line.me/R/ti/p/@313iltbw?oat_content=url&amp;ts=07271506#~">LINEで相談する</a>
+<a class="book" href="https://ubshinjuku.b4a.clinic/clinics/301/bookings/new/select/menu/">Web予約する　›</a>
+</div>
+</body></html>
